@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div id="start-page">
+        <img src="./assets/startGame.png" alt="" id="start-game" >
+        <span class="close" onclick="startBtn()">&times;</span>
+        <!-- <button id="btn" onclick="startBtn()">Start</button> -->
+    </div>
+
+
+<div id="container">
+    <!-- <div id="name">
+    <img  id="heading" src="./assets/Group 36290.png"  alt="">
+    </div> -->
+    <div class="border-container">
+    <div id="main-container">
+        
+        <!-- <div id="name-box"></div> -->
+        <!-- <div id="image-box"></div> -->
+        
+<div  class="col-5" id="name-box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div  class="col-5" id="image-box"></div>
+
+    </div>
+</div>
+<button id="submit-button">submit</button>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
