@@ -62,14 +62,6 @@ startPage.style.display = "none";
 document.getElementById("container").style.display = "block";
 }
 
-
-
-
-
-
-
-
-
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -267,10 +259,16 @@ function checkAnswers() {
     // Check if all questions are answered
     if (correctIndices.length + incorrectIndices.length === obj1.length) {
         // Display an alert with the user's score
-        alert(`Total Questions: ${obj1.length}\nCorrect Answers: ${correctIndices.length}\nWrong Answers: ${incorrectIndices.length}\nYour Score: ${userScore} marks`);
+        // alert(`Total Questions: ${obj1.length}\nCorrect Answers: ${correctIndices.length}\nWrong Answers: ${incorrectIndices.length}\nYour Score: ${userScore} marks`);
+        gameOver();
     }
 }
 
 // ... (remaining code)
 
 
+function gameOver(){
+
+    document.getElementById("container").style.display = "none";
+    document.getElementById("game-over-modal").style.display = "block";
+}
